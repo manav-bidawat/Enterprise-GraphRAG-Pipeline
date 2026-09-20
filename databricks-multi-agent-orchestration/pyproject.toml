@@ -1,0 +1,46 @@
+[project]
+name = "graph-enrichment"
+version = "0.1.0"
+description = "Hands-on workshop for building graph-augmented AI systems with Neo4j and Databricks"
+requires-python = ">=3.10"
+dependencies = [
+    # Databricks SDK - https://pypi.org/project/databricks-sdk/
+    "databricks-sdk>=0.74.0",
+    # Neo4j driver - https://pypi.org/project/neo4j/
+    # Note: neo4j-graphrag requires neo4j>=5.17.0,<6.0.0
+    "neo4j>=5.17.0,<6.0.0",
+    # PySpark - https://pypi.org/project/pyspark/ (keeping 3.x for Databricks Runtime compatibility)
+    "pyspark>=3.5.0",
+    # Environment config - https://pypi.org/project/python-dotenv/
+    "python-dotenv>=1.2.0",
+    # LangGraph orchestration - https://pypi.org/project/langgraph/
+    "langgraph>=1.0.0",
+    # LangChain core - https://pypi.org/project/langchain-core/
+    "langchain-core>=1.0.0",
+    # LangChain OpenAI - https://pypi.org/project/langchain-openai/
+    "langchain-openai>=1.0.0",
+    # Pydantic models - https://pypi.org/project/pydantic/
+    "pydantic>=2.10.0",
+    # V2 agent: Native structured output with ChatDatabricks
+    # Reference: https://api-docs.databricks.com/python/databricks-ai-bridge/latest/databricks_langchain.html
+    "databricks-langchain>=0.11.0",
+    # DSPy agent: Programmatic AI with structured output
+    # Reference: https://docs.databricks.com/aws/en/generative-ai/dspy/
+    # PyPI: https://pypi.org/project/dspy/ (v3.0.4 as of Dec 2025)
+    "dspy>=3.0.4",
+    # MLflow for DSPy tracing (optional but recommended)
+    # Reference: https://docs.databricks.com/aws/en/mlflow3/genai/tracing/integrations/dspy
+    "mlflow[databricks]>=3.7",
+    # neo4j-graphrag - Official Neo4j GraphRAG library
+    # Reference: https://github.com/neo4j/neo4j-graphrag-python
+    "neo4j-graphrag>=1.0.0",
+    # BeautifulSoup for HTML parsing
+    # Reference: https://pypi.org/project/beautifulsoup4/
+    "beautifulsoup4>=4.12.0",
+    # Sentence Transformers for local embeddings
+    # Reference: https://pypi.org/project/sentence-transformers/
+    "sentence-transformers>=3.0.0",
+    # nest_asyncio for running async in Jupyter/Databricks notebooks
+    # Reference: https://pypi.org/project/nest-asyncio/
+    "nest-asyncio>=1.6.0",
+]
