@@ -54,13 +54,5 @@ kubectl apply -f k8s/backend-deployment.yaml
 kubectl apply -f k8s/frontend-deployment.yaml
 ```
 
-## 🌟 Why this matters (For Recruiters/Hiring Managers)
-* **Full-Stack AI Engineering:** Demonstrates end-to-end capabilities, from Big Data ingestion (Spark) to Backend APIs (Django) to User Interfaces (React).
-* **Enterprise Infrastructure:** Implements Docker containerization and Kubernetes orchestration, proving the ability to deploy AI models reliably at scale.
-* **GraphRAG vs Vector RAG:** Moving beyond simple vector similarity (FAISS), this uses a Knowledge Graph to map explicit, deterministic relationships between entities, drastically reducing LLM hallucinations.
-* **Model Context Protocol (MCP):** Implements the latest open standard for AI tool-use, decoupling the database logic from the specific LLM orchestration framework.
 
-## 🗄️ Source Code Repositories Merged
-This repository contains the full, unaltered source codes for the core components:
-- `databricks-multi-agent-orchestration/`: The complete Neo4j Graph Enrichment workshop (Option 2), including all Databricks PySpark notebooks, DSPy agent implementations, and dataset generation scripts.
-- `official-mcp-neo4j-server/`: The official Neo4j Model Context Protocol (MCP) server implementation (Option 3) bridging Neo4j to LLMs.
+
