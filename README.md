@@ -1,10 +1,10 @@
-# Enterprise GraphRAG Pipeline (Full-Stack AI Architecture)
+# Enterprise GraphRAG Pipeline (Full-Stack Production Environment)
 
-This repository demonstrates a production-grade, full-stack AI architecture combining big data processing, graph databases, autonomous LLM agents, and a scalable web interface. 
+This repository demonstrates a production-grade, full-stack AI production environment combining big data processing, graph databases, autonomous LLM agents, and a scalable web interface. 
 
 It bridges **Databricks** (PySpark) with **Neo4j** (Knowledge Graph), exposes the insights directly to AI Agents using Anthropic's **Model Context Protocol (MCP)**, and serves the application via a **Django REST Framework** backend and **React** frontend, fully orchestrated with **Docker** and **Kubernetes**.
 
-## 🏗️ System Architecture
+## 🏗️ Production System
 
 1. **Data Engineering (Databricks + PySpark):** Massive datasets (e.g., financial transactions, retail interactions) are processed on a Databricks cluster. The data is cleaned and written directly into a Neo4j Graph Database using the `neo4j-spark-connector`.
 2. **Graph Enrichment (Neo4j):** Once the data is in Neo4j, relationships are mapped (e.g., `Customer -[BOUGHT_AT]-> Merchant`). We run Graph Data Science (GDS) algorithms like PageRank or Louvain to detect fraud clusters.
